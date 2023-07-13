@@ -26,9 +26,10 @@
 
 <body>
     <div class="layout">
-        <form action="/board/writepro" method="post">
+        <form action="/board/writepro" method="post" enctype="multipart/form-data"> <!-- enctype은 파일을 첨부하기 위해 필요 -->
             <input name = "title" type="text">
             <textarea name = "content"></textarea>
+            <input type="file" name="file">
             <button type="submit">작성</button> <!-- 버튼을 누르면 제목과 내용이 전달됨. -->
         </form>
     </div>

@@ -15,5 +15,7 @@ public class board { // DB의 table이름과 일치하게 하는 것이 좋음.
     private Integer id;
     private String title;
     private String content;
+    private String filename;
+    private String filepath;
 
 }
